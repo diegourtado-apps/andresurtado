@@ -299,6 +299,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 1.75rem;
 }
 .artist__body { color: var(--ink-soft); max-width: 52ch; }
+.artist__body + .artist__body { margin-top: 1.1rem; }
 .artist__media .img-placeholder { aspect-ratio: 4 / 5; }
 
 /* ============================================================
