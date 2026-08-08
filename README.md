@@ -24,9 +24,9 @@ Poné las imágenes en la carpeta `images/` con estos nombres exactos:
 |-------------------------|-------------------------------------------|-----------------|
 | `images/hero.jpg`       | Portada: las 4 esculturas juntas          | ~1400 × 1600 px |
 | `images/creciente.jpg`  | Escultura "Creciente"                     | ~900 × 1200 px  |
-| `images/vela.jpg`       | Escultura "Vela"                          | ~900 × 1200 px  |
-| `images/umbral.jpg`     | Escultura "Umbral"                        | ~900 × 1200 px  |
-| `images/vertice.jpg`    | Escultura "Vértice"                       | ~900 × 1200 px  |
+| `images/nucleo.jpg`     | Escultura "Núcleo"                        | ~900 × 1200 px  |
+| `images/oculo.jpg`      | Escultura "Óculo"                         | ~900 × 1200 px  |
+| `images/veta.jpg`       | Escultura "Veta"                          | ~900 × 1200 px  |
 | `images/artista.jpg`    | Retrato o detalle de textura del artista  | ~1200 × 1500 px |
 | `images/og.jpg`         | Imagen para compartir en redes (opcional) | 1200 × 630 px   |
 
