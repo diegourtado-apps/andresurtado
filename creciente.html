@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creciente · Andrés Urtado</title>
+  <meta name="description" content="Creciente — escultura en acero corten con luz integrada, de Andrés Urtado." />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Creciente · Andrés Urtado" />
+  <meta property="og:description" content="Escultura en acero corten con luz integrada." />
+  <meta property="og:image" content="images/creciente.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>AU</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="index.html#inicio" class="wordmark">Andrés Urtado</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html#coleccion">Colección</a>
+        <a href="index.html#artista">Artista</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html#coleccion">Colección</a>
+    <a href="index.html#artista">Artista</a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+
+  <main>
+    <section class="obra">
+      <div class="container">
+        <a href="index.html#coleccion" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Colección
+        </a>
+
+        <div class="obra__top">
+          <div class="obra__figure reveal">
+            <div class="img-placeholder img-placeholder--tall" data-fill="images/creciente.jpg"><span>creciente.jpg</span></div>
+          </div>
+
+          <div class="obra__text reveal">
+            <p class="obra__eyebrow">Obra</p>
+            <h1 class="obra__name">Creciente</h1>
+            <p class="obra__spec">Acero corten · Luz LED integrada</p>
+
+            <div class="obra__desc">
+              <p>
+                Creciente es una curva que asciende. Como la luna en cuarto creciente
+                o la vela de un barco tomada por el viento, la pieza parte de una base
+                breve y se abre hacia lo alto, ganando espacio a medida que sube. El
+                acero corten, con su óxido cálido, le da el peso de lo terrestre; la
+                línea de luz que recorre su cara interior le devuelve la ligereza.
+              </p>
+              <p>
+                Es una obra sobre el crecimiento y el impulso: la materia que, en lugar
+                de caer, se estira hacia arriba. La luz no ilumina la forma desde afuera,
+                la habita —marca el borde por donde la escultura respira.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="obra__gallery-wrap">
+        <div class="container">
+          <p class="eyebrow reveal">Detalles</p>
+          <div class="obra__gallery">
+            <div class="img-placeholder reveal" data-fill="images/creciente-1.jpg"><span>creciente-1.jpg</span></div>
+            <div class="img-placeholder reveal" data-fill="images/creciente-2.jpg"><span>creciente-2.jpg</span></div>
+            <div class="img-placeholder reveal" data-fill="images/creciente-3.jpg"><span>creciente-3.jpg</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="obra__pager" aria-label="Navegación entre obras">
+          <span class="prev disabled"></span>
+          <a class="next" href="nucleo.html">
+            <span class="pager__label">Siguiente obra</span>
+            Núcleo →
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="wordmark wordmark--footer">Andrés Urtado</p>
+        <p class="footer__tag">Escultor · Uruguay</p>
+      </div>
+      <div class="footer__contact">
+        <a href="https://instagram.com/andres_urtado_morales" target="_blank" rel="noopener">@andres_urtado_morales</a>
+        <a href="mailto:contacto@plasmado.uy">contacto@plasmado.uy</a>
+        <a href="https://andresurtado.com">andresurtado.com</a>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span id="year"></span> Andrés Urtado. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

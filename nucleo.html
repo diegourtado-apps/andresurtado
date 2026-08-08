@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Núcleo · Andrés Urtado</title>
+  <meta name="description" content="Núcleo — escultura en acero con luz integrada, de Andrés Urtado." />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Núcleo · Andrés Urtado" />
+  <meta property="og:description" content="Escultura en acero con luz integrada." />
+  <meta property="og:image" content="images/nucleo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>AU</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="index.html#inicio" class="wordmark">Andrés Urtado</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html#coleccion">Colección</a>
+        <a href="index.html#artista">Artista</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html#coleccion">Colección</a>
+    <a href="index.html#artista">Artista</a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+
+  <main>
+    <section class="obra">
+      <div class="container">
+        <a href="index.html#coleccion" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Colección
+        </a>
+
+        <div class="obra__top">
+          <div class="obra__figure reveal">
+            <div class="img-placeholder img-placeholder--tall" data-fill="images/nucleo.jpg"><span>nucleo.jpg</span></div>
+          </div>
+
+          <div class="obra__text reveal">
+            <p class="obra__eyebrow">Obra</p>
+            <h1 class="obra__name">Núcleo</h1>
+            <p class="obra__spec">Acero inoxidable · Luz LED integrada</p>
+
+            <div class="obra__desc">
+              <p>
+                En Núcleo, una columna sobria de acero guarda en su interior una línea
+                de luz que serpentea de arriba abajo. Lo esencial no está en la
+                superficie sino en el centro: la grieta luminosa revela el núcleo, eso
+                que late escondido dentro de la materia sólida.
+              </p>
+              <p>
+                El contraste es deliberado —la quietud del bloque frente al movimiento
+                del trazo de luz—. La pieza propone que aun en lo más rígido hay una
+                corriente viva, una energía que recorre el eje y sostiene el conjunto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="obra__gallery-wrap">
+        <div class="container">
+          <p class="eyebrow reveal">Detalles</p>
+          <div class="obra__gallery">
+            <div class="img-placeholder reveal" data-fill="images/nucleo-1.jpg"><span>nucleo-1.jpg</span></div>
+            <div class="img-placeholder reveal" data-fill="images/nucleo-2.jpg"><span>nucleo-2.jpg</span></div>
+            <div class="img-placeholder reveal" data-fill="images/nucleo-3.jpg"><span>nucleo-3.jpg</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="obra__pager" aria-label="Navegación entre obras">
+          <a class="prev" href="creciente.html">
+            <span class="pager__label">Obra anterior</span>
+            ← Creciente
+          </a>
+          <a class="next" href="oculo.html">
+            <span class="pager__label">Siguiente obra</span>
+            Óculo →
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="wordmark wordmark--footer">Andrés Urtado</p>
+        <p class="footer__tag">Escultor · Uruguay</p>
+      </div>
+      <div class="footer__contact">
+        <a href="https://instagram.com/andres_urtado_morales" target="_blank" rel="noopener">@andres_urtado_morales</a>
+        <a href="mailto:contacto@plasmado.uy">contacto@plasmado.uy</a>
+        <a href="https://andresurtado.com">andresurtado.com</a>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span id="year"></span> Andrés Urtado. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
