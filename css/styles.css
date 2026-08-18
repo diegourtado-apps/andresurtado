@@ -296,6 +296,15 @@ a { color: inherit; text-decoration: none; }
 }
 .piece:hover .piece__more,
 .piece:focus-visible .piece__more { opacity: 1; transform: none; }
+.piece__price {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
 
 /* ============================================================
    ARTISTA
@@ -369,6 +378,52 @@ a { color: inherit; text-decoration: none; }
 .contact__value {
   font-family: var(--serif-display);
   font-size: 1.35rem;
+}
+
+/* ============================================================
+   PRENSA
+   ============================================================ */
+.press { padding: clamp(4rem, 10vh, 7rem) 0; border-top: 1px solid var(--line); }
+.press__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.9rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: padding-left 0.4s var(--ease);
+}
+.press__item:hover { padding-left: 0.8rem; }
+.press__title {
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.1;
+}
+.press__desc { color: var(--ink-soft); margin-top: 0.45rem; font-style: italic; }
+.press__year {
+  display: block;
+  margin-top: 0.7rem;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+.press__cta {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--corten);
+  white-space: nowrap;
+  transition: transform 0.4s var(--ease);
+}
+.press__item:hover .press__cta { transform: translateX(4px); }
+@media (max-width: 640px) {
+  .press__item { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 /* ============================================================
@@ -503,6 +558,56 @@ a { color: inherit; text-decoration: none; }
 }
 .obra__desc { margin-top: 1.75rem; color: var(--ink-soft); max-width: 48ch; }
 .obra__desc p + p { margin-top: 1rem; }
+
+/* Ficha técnica */
+.obra__ficha { margin-top: 2rem; border-top: 1px solid var(--line); }
+.obra__ficha > div {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.obra__ficha dt {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.obra__ficha dd { font-family: var(--serif-body); font-size: 1.02rem; color: var(--ink); }
+.ficha__hint {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+.obra__ficha--price dd { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
+.ficha__price { font-family: var(--serif-display); font-weight: 500; font-size: 1.5rem; }
+.disponible {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4a7a3a;
+}
+.disponible::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #5c9a48;
+}
+.obra__cta { margin-top: 2.25rem; }
 
 .obra__gallery-wrap {
   padding: clamp(3rem, 9vh, 6rem) 0;
